@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 1. form태그에 method(전송방식)를 반드시 지정한다 -->
+	<!-- 2. form태그에 action(request받을 서버 주소/경로)을 반드시 지정한다 -->
+	<form method="post" action="calc.jsp">
+	<!-- 3. 전송하고 싶은 데이터(input, select 태그)는 반드시 from 태그 안에 적어준다 -->
+	<!-- 4. 전송할 데이터를 입력하는 태그에는 반드시 name을 지정해준다 -->
+		<input type="text" name="n1" id="n1" size=10 />
+		<select name="op" id="op">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+		</select>
+		<input type="text" name="n2" id="n2" size=10 />
+		<input type="submit" value="실행!!"/>
+	</form>
+</body>
+</html>
